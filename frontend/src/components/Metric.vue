@@ -14,9 +14,10 @@ import axios from 'axios';
 import { ref } from 'vue';
 import Chart from 'chart.js/auto';
 
+
 let selectedFile: any = null;
 const chartCanvas = ref(null);
-let myChart: Chart | null = null; 
+let myChart: Chart | null = null;
 
 function handleFileUpload(event: any) {
   selectedFile = event.target.files[0];
@@ -53,6 +54,7 @@ function renderChartWithData(data: any) {
     console.error('Os dados recebidos não são um array válido.');
     return;
   }
+
 
   const labels = data.map((item) => item.mes_ano);
   const mrrValues = data.map((item) => item.MRR);
@@ -105,12 +107,28 @@ function renderChartWithData(data: any) {
         },
         options: {
           responsive: true,
+          plugins: {
+            tooltip: {
+              mode: 'index',
+              intersect: false,
+              callbacks: {
+                label: function (context) {
+                  let label = context.dataset.label || '';
+                  if (label) {
+                    label += ': ';
+                  }
+                  label += Math.round(context.parsed.y * 100) / 100;
+                  return label;
+                }
+              }
+            }
+          },
           scales: {
             y: {
               beginAtZero: true,
             },
           },
-        },
+        }
       });
     }
   }
@@ -148,7 +166,8 @@ button:hover {
 .chart-container {
   margin-top: 20px;
   width: 100%;
-  max-width: 600px; /* Ajuste conforme necessário */
+  max-width: 600px;
+  /* Ajuste conforme necessário */
   margin-left: auto;
   margin-right: auto;
 }
