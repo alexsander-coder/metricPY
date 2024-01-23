@@ -7,8 +7,7 @@ Este repositório contém tanto o backend quanto o frontend para o projeto Metri
 Primeiro, clone o repositório usando Git:
 
 \`\`\`bash
-git clone https://github.com/alexsander-coder/metricPY.git
-\`\`\`
+git clone https://github.com/alexsander-coder/metricPY.git\`\`\`
 
 ## Backend
 
@@ -18,22 +17,16 @@ O backend do projeto é construído usando FastAPI.
 
 1. Navegue até a pasta do backend:
 
-   \`\`\`bash
-   cd metricPY/backend
-   \`\`\`
+   \`\`\`bash cd metricPY/backend\`\`\`
 2. Instale as dependências necessárias:
 
-   \`\`\`bash
-   pip install fastapi uvicorn
-   \`\`\`
+   \`\`\`bash pip install fastapi uvicorn\`\`\`
 
 ### Executar o Servidor Backend
 
 Para iniciar o servidor backend, execute:
 
-\`\`\`bash
-uvicorn main:fast --reload
-\`\`\`
+\`\`\`bash uvicorn main:fast --reload\`\`\`
 
 O servidor estará rodando em [http://localhost:8000](http://localhost:8000).
 
@@ -45,22 +38,16 @@ O frontend do projeto é construído usando [VUE 3 com Typescript].
 
 1. Navegue até a pasta do frontend:
 
-   \`\`\`bash
-   cd metricPY/frontend
-   \`\`\`
+   \`\`\`bash cd metricPY/frontend\`\`\`
 2. Instale as dependências necessárias:
 
-   \`\`\`bash
-   npm install
-   \`\`\`
+   \`\`\`bash npm install\`\`\`
 
 ### Executar o Servidor Frontend
 
 Para iniciar o servidor frontend, execute:
 
-\`\`\`bash
-npm run dev
-\`\`\`
+\`\`\`bash npm run dev\`\`\`
 
 O servidor frontend estará disponível em [http://localhost:3000](http://localhost:3000) (ajuste a URL conforme necessário).
 
