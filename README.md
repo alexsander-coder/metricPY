@@ -1,6 +1,7 @@
+
 # MetricPY
 
-Este repositório contém tanto o backend quanto o frontend para o projeto MetricPY. Abaixo estão as instruções resumidas para configurar e executar ambos. (Para mais detalhes sobre como trabalhar com cada parte do projeto, consulte os READMEs individuais nas respectivas pastas de backend e frontend.)
+Este repositório contém tanto o backend quanto o frontend para o projeto MetricPY. Abaixo estão as instruções resumidas para configurar e executar ambos.
 
 ## Clonar o Repositório
 
@@ -21,6 +22,7 @@ O backend do projeto é construído usando FastAPI.
    ```bash
    cd metricPY/backend
    ```
+
 2. Instale as dependências necessárias:
 
    ```bash
@@ -48,6 +50,7 @@ O frontend do projeto é construído usando [Nome da Tecnologia Frontend].
    ```bash
    cd metricPY/frontend
    ```
+
 2. Instale as dependências necessárias:
 
    ```bash
