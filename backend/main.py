@@ -14,5 +14,5 @@ fast.add_middleware(
     allow_headers=["*"],
 )
 
-# rotas do módulo de upload
+# rotas do mod de upload
 fast.include_router(upload_router)
