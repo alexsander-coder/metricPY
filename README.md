@@ -26,7 +26,7 @@ O backend do projeto é construído usando FastAPI.
 2. Instale as dependências necessárias:
 
    ```bash
-   pip install fastapi uvicorn
+   pip install fastapi
    ```
 
 ### Executar o Servidor Backend
