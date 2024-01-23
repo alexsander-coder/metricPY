@@ -34,7 +34,7 @@ O backend do projeto é construído usando FastAPI.
 Para iniciar o servidor backend, execute:
 
 ```bash
-uvicorn main:app --reload
+uvicorn main:fast --reload
 ```
 
 O servidor estará rodando em [http://localhost:8000](http://localhost:8000).
